@@ -14,10 +14,11 @@ variable "key_name" {
 	default = "vishnu"
 }
 
-variable "access_key" {
-	description = "access key"
-}
+variable "AWS_ACCESS_KEY" {}
 
-variable "secret_key" {
-	description = "secret key"
-}
+variable "AWS_SECRET_KEY" {}
+
+variable "AWS_REGION"{
+	default = "us-east-1"
+	}
+
