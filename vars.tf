@@ -8,6 +8,16 @@ variable "instance_type" {
 	default = "t2.micro"
 }
 
+variable "security_group" {
+	description = "security group"
+	default = "sg-761bd003"
+}
+
+variable "vpc" {
+	description = "vpc"
+	default = "vpc-8b1b91f3"
+}
+
 
 variable "key_name" {
 	description = "keyname"
