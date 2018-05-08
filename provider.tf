@@ -7,8 +7,8 @@ resource "aws_instance" "example"{
 ami = "${var.ami}",
 instance_type = "${var.instance_type}"
 key_name = "${var.key_name}"
-security_group = "${var.security_group}"
-vpc = "${var.vpc}"
+security_groups = "${var.security_group}"
+vpc_security_group_ids  = "${var.vpc}"
 tags {
         Name = "first"
         contact = "emailid"
