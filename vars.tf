@@ -8,13 +8,13 @@ variable "instance_type" {
 	default = "t2.micro"
 }
 
-variable "security_group" {
-	description = "security group"
+variable "security_groups" {
+	description = "security_groups"
 	default = "sg-761bd003"
 }
 
-variable "vpc" {
-	description = "vpc"
+variable "vpc_security_group_ids" {
+	description = "vpc_security_group_ids"
 	default = "vpc-8b1b91f3"
 }
 
